@@ -1,5 +1,5 @@
 p {
-  color: green;
+  
   font-family: Tahoma;
   font-weight: 500px;
   padding: 3.5px;
@@ -26,6 +26,9 @@ h1 {
   
  background-image: url('/Back.jpg');
 }
+.nav background-image {
+filter: blur(10px);
+}
 .nav a {
   background-color:blue;
   padding:2px;
@@ -37,12 +40,8 @@ h1 {
   margin-left:80%;
   display: inline-block;
 }
-body {
-  background-color: black;
- 
-}
 
-img {
+.ba {
   filter: blur(10px);
   z-index: -10;
   position: fixed;
@@ -51,12 +50,33 @@ img {
   visibility: visible;
 }
 
+.ca {
+  position:static;
+  max-height:300px;
+  max-width:750px;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: 8px 15px 50px black;
+  z-index:5px;
+}
+
+.cntnr {
+  margin-left:10px;
+  background: rgb(29,21,166);
+background: linear-gradient(90deg, rgba(29,21,166,1) 0%, rgba(121,121,212,1) 53%, rgba(12,153,183,1) 87%);
+  );
+  max-height:400px;
+  max-width:250px;
+  border-radius: 15px;
+  
+}
+
 .lin li {
 background-color:white;
   padding:2px;
   border-radius: 15px;
   box-shadow: 7px 8px 9px light-blue;
-  color:grey;
+  color:black;
   display: inline-block;
   
 }
@@ -64,4 +84,11 @@ background-color:white;
 .lin li a {
   
   text-decoration:none;
+}
+.inf {
+  display: inline-block;
+  color:black;
+  font-size:20px;
+  font-family:Futura;
+  font-weight: bold;
 }
