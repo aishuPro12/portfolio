@@ -8,37 +8,42 @@ p {
   text-align: center;
 }
 
+h1 {
+  
+  padding: 20px;
+}
+
 h4 {
   color: green;
   font-weight: bold;
 }
-h1 {
+.nav {
+  margin: 0px 0px 16px 0px;
+  background-color: #c7e6ed;
+  justify-content: center;
   display: flex;
   text-align: center;
   justify-content: center;
- 
+  align-items:center;
   max-width:100%;
   min-height:40px;
   padding:1px;
-  color: grey;
+  color: grey
 }
-.nav {
-  
- background-image: url('/Back.jpg');
-}
-.nav background-image {
-filter: blur(10px);
-}
-.nav a {
-  background-color:blue;
-  padding:2px;
-  border-radius: 15px;
-  box-shadow: 7px 8px 9px light-blue;
-  text-decoration: none;
-  color:aqua;
-  margin-right: 10px;
-  margin-left:80%;
+
+.btn {
   display: inline-block;
+  background-color:blue;
+  padding:4px ;
+  border-radius: 15px;
+ animation: pulse 1.05s infinite;
+ 
+}
+
+ a {
+  color: white;
+  text-decoration: none;
+  
 }
 
 .ba {
@@ -51,23 +56,33 @@ filter: blur(10px);
 }
 
 .ca {
-  position:static;
-  max-height:300px;
-  max-width:750px;
-  display: inline-block;
+  
+  align-self: center;
+  max-height:200px;
+  max-width :300px;
   border-radius: 25px;
   box-shadow: 8px 15px 50px black;
   z-index:5px;
 }
 
 .cntnr {
-  margin-left:10px;
+  margin-left:10vw;
   background: rgb(29,21,166);
-background: linear-gradient(90deg, rgba(29,21,166,1) 0%, rgba(121,121,212,1) 53%, rgba(12,153,183,1) 87%);
-  );
-  max-height:400px;
-  max-width:250px;
+ background-color: aqua;
+  max-width:500px;
   border-radius: 15px;
+  overflow: auto;
+  
+  
+}
+
+
+.intro {
+  background-color: black;
+  color: green;
+  height:100px;
+  margin:0px 0px 0px 0px;
+  width: 100%;
   
 }
 
@@ -78,17 +93,47 @@ background-color:white;
   box-shadow: 7px 8px 9px light-blue;
   color:black;
   display: inline-block;
+  text-align: center;
   
 }
 
-.lin li a {
-  
-  text-decoration:none;
+.lin{
+display: flex;
+  align-items: center;
+  justify-content:center;
 }
+
+.lin li a {
+  text-align: center;
+  padding: 2px;
+  border-radius:4px;
+  color: black;
+  text-decoration:none;
+background: linear-gradient(90deg, rgba(29,21,166,1) 0%, rgba(121,121,212,1) 53%, rgba(12,153,183,1) 87%);
+}
+
+
+
 .inf {
-  display: inline-block;
+  display: flex ;
   color:black;
   font-size:20px;
   font-family:Futura;
   font-weight: bold;
 }
+
+
+.last {
+  background-color:grey;
+  
+}
+
+
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(57, 252, 255, 0.6) ;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(57, 252, 255, 0.2) ;
+      
