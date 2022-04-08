@@ -11,6 +11,7 @@ p {
 h1 {
   
   padding: 20px;
+  font-size:30;
 }
 
 h4 {
@@ -46,14 +47,6 @@ h4 {
   
 }
 
-.ba {
-  filter: blur(10px);
-  z-index: -10;
-  position: fixed;
-  max-width:auto;
-  max-height:auto;
-  visibility: visible;
-}
 
 .ca {
   
@@ -136,4 +129,4 @@ background: linear-gradient(90deg, rgba(29,21,166,1) 0%, rgba(121,121,212,1) 53%
   }
   70% {
       -webkit-box-shadow: 0 0 0 10px rgba(57, 252, 255, 0.2) ;
-      
+  }
